@@ -11,7 +11,7 @@ const logger = new winston.Logger({
       colorize: true,
       timestamp: true,
       prettyPrint: true,
-      label: 'vodori-auth-server',
+      label: 'oauth2-server',
     }),
   ],
 });
