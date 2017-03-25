@@ -1,7 +1,7 @@
 # Node OAuth2 Server Implementation
 
-An Express OAuth2 server implementing[node-oauth2-server](https://www.npmjs.com/package/node-oauth2-server)
-using the[express wrapper](https://github.com/oauthjs/express-oauth-server)
+An Express OAuth2 server implementing [node-oauth2-server](https://www.npmjs.com/package/node-oauth2-server)
+using the [express wrapper](https://github.com/oauthjs/express-oauth-server)
 
 ## Overview
 
