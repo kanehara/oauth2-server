@@ -1,0 +1,7 @@
+{
+  "mongo": {
+    "uri": "docker:37117/authserver",
+    "user": "test",
+    "pass": "password"
+  }
+}

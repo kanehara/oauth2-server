@@ -2,7 +2,7 @@ import winston from 'winston';
 
 const level =
     process.env.NODE_ENV === 'test' ? 'error' :
-    (process.env.NODE_ENV === 'prod' ? 'info' : 'debug');
+    (process.env.NODE_ENV === 'production' ? 'info' : 'debug');
 
 const logger = new winston.Logger({
   transports: [

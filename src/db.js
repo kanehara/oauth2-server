@@ -26,9 +26,22 @@ db.on('disconnected', () => {
 });
 
 export default function connect() {
+
+  // Set Promise interface for Mongoose to ES6 promises
+  mongoose.Promise = global.Promise;
+
+  if (!config.mongo) {
+    logger.error("Configuration json is missing 'mongo' key! Killing app...");
+    process.exit();
+  }
   const { uri, user, pass } = config.mongo;
+  const options = {
+    user,
+    pass,
+    promiseLibrary: global.Promise
+  };
 
   // Makes connection asynchronously. Mongoose will queue up database
   // operations and release them when the connection is complete.
-  return mongoose.connect(uri, { user, pass });
+  return mongoose.connect(uri, options);
 }
