@@ -7,8 +7,8 @@ export const clientCredentials = {
 };
 
 export const userCredentials = {
-  username: 'vodori',
-  password: 'vodori123!'
+  username: 'user',
+  password: 'pass!'
 };
 
 /**
@@ -31,7 +31,7 @@ export default async function() {
     logger.debug('Finished loading demo User', demoUser);
 
     const demoClient = await Client.create({
-      "name" : "vodori",
+      "name" : "oauth2 Client",
       "clientId" : clientCredentials.clientId,
       "clientSecret" : clientCredentials.clientSecret,
       "grants" : ["client_credentials"],

@@ -128,7 +128,7 @@ For more on the OAuth2 spec:
       }
       ```
       
-      `access_token` The access token to use in requests to Vodori API's
+      `access_token` The access token
       
       `token_type` The access token type which should be prepended to the authorization header value when using token
       
